@@ -51,6 +51,7 @@ export default async function RootLayout({children, params: {locale}}) {
           <Footer />
         </Suspense>
         <Analytics />
+        
         <Ganalytics />
       </body>
     </html>
