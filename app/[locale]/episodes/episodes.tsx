@@ -18,7 +18,9 @@ import "./player.css";
 
 import {useTranslations} from 'next-intl';
 
-export default function Episodes({ session, membership }: { session: Session | null, membership: string }) {
+export default function Episodes({ 
+  session, membership, locale
+ }: { session: Session | null, membership: string, locale: string }) {
 
   const t = useTranslations('Episodes');
 
@@ -296,7 +298,7 @@ export default function Episodes({ session, membership }: { session: Session | n
                   setEpisodeNumber(String(index + 1));
                   setTimestampsEpisode(episodeTimestamps);
                   setTimestampsSolutions(solutionsTimestamp);
-                  fetchSignedUrl(episodeVideo);
+                  fetchSignedUrl(episodeVideo + locale + ".mp4");
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }}>
                   <CardEpisode

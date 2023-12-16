@@ -71,7 +71,7 @@ export const easyEpisodes = [
         title: "Contract",
         image: "/waterfall.png",
         description: "Your first step of the journey, the fundamentals of a contract",
-        episodeVideo: "Episoee_One_1440p.mp4",
+        episodeVideo: "1_",
         solutionsVideo: "Episoee_One_1440p.mp4",
         episodeTimestamps: [
             { description: 'Agenda', timestampString: '0:18', timestampNumber: 18 },
@@ -93,7 +93,7 @@ export const easyEpisodes = [
         title: "Types",
         image: "/lotus.png",
         description: "Explore primitive types in Solidity (uint, int, bool, address, and more",
-        episodeVideo: "Episode_Two_1440p.mp4",
+        episodeVideo: "2_",
         solutionsVideo: "Episode_Two_1440p.mp4",
         episodeTimestamps: [
             { description: 'Agenda', timestampString: '0:18', timestampNumber: 18 },

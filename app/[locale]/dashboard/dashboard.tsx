@@ -13,41 +13,20 @@ export default function Dashboard({ session }: { session: Session | null }) {
 
   const t = useTranslations('Home');
 
-  const locales = [
-    'en', 'ja', 'zh', 'de', 'hi', 'fr', 'ko', 'pt', 'it', 'es', 'id', 'nl', 'tr', 'tl', 'pl',
-    'sv', 'bg', 'ro', 'ar', 'cs', 'el', 'fi', 'hr', 'ms', 'sk', 'da', 'ta', 'uk', 'ru'
-  ]
+  const locales = ['en', 'ar', 'fr', 'es', 'zh', 'de', 'hi', 'id', 'pt', 'ru', 'tr']
 
   const localesFull = [
     'English', // en
-    '日本語',   // ja (Japanese)
+    'العربية', // ar (Arabic)
+    'Français', // fr (French)
+    'Español', // es (Spanish)
     '中文',     // zh (Chinese)
     'Deutsch', // de (German)
     'हिन्दी',   // hi (Hindi)
-    'Français', // fr (French)
-    '한국어',   // ko (Korean)
-    'Português', // pt (Portuguese)
-    'Italiano', // it (Italian)
-    'Español', // es (Spanish)
     'Bahasa Indonesia', // id (Indonesian)
-    'Nederlands', // nl (Dutch)
-    'Türkçe', // tr (Turkish)
-    'Filipino', // tl (Filipino)
-    'Polski', // pl (Polish)
-    'Svenska', // sv (Swedish)
-    'Български', // bg (Bulgarian)
-    'Română', // ro (Romanian)
-    'العربية', // ar (Arabic)
-    'Čeština', // cs (Czech)
-    'Ελληνικά', // el (Greek)
-    'Suomi', // fi (Finnish)
-    'Hrvatski', // hr (Croatian)
-    'Bahasa Melayu', // ms (Malay)
-    'Slovenčina', // sk (Slovak)
-    'Dansk', // da (Danish)
-    'தமிழ்', // ta (Tamil)
-    'Українська', // uk (Ukrainian)
-    'Русский' // ru (Russian)
+    'Português', // pt (Portuguese)
+    'Русский', // ru (Russian)
+    'Türkçe' // tr (Turkish)
   ];
 
   if (!session) return <Generic />;

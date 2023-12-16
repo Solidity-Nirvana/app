@@ -49,5 +49,5 @@ export default async function Nav() {
 
   const member = await fetchData();
   const session = await getServerSession(authOptions);
-  return <NextIntlClientProvider messages={messages}><Episodes session={session} membership={member.membership} /></NextIntlClientProvider>;
+  return <NextIntlClientProvider messages={messages}><Episodes session={session} membership={member.membership} locale={locale} /></NextIntlClientProvider>;
 }
