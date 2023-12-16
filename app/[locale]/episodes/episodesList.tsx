@@ -71,7 +71,7 @@ export const easyEpisodes = [
         title: "Contract",
         image: "/waterfall.png",
         description: "Your first step of the journey, the fundamentals of a contract",
-        episodeVideo: "Episoee_One_1440p.mp4",
+        episodeVideo: "1_",
         solutionsVideo: "Episoee_One_1440p.mp4",
         episodeTimestamps: [
             { description: 'Agenda', timestampString: '0:18', timestampNumber: 18 },
@@ -88,28 +88,28 @@ export const easyEpisodes = [
             { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
             { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
         ],
-    },
-    {
-        title: "Types",
-        image: "/lotus.png",
-        description: "Explore primitive types in Solidity (uint, int, bool, address, and more",
-        episodeVideo: "Episode_Two_1440p.mp4",
-        solutionsVideo: "Episode_Two_1440p.mp4",
-        episodeTimestamps: [
-            { description: 'Agenda', timestampString: '0:18', timestampNumber: 18 },
-            { description: 'Unsigned Integers (uint)', timestampString: '1:40', timestampNumber: 60 + 40 },
-            { description: 'Signed Integers (int)', timestampString: '19:22',  timestampNumber: 60 * 19 + 22 },
-            { description: 'Addresses (address)', timestampString: '26:20', timestampNumber: 60 * 26 + 20 },
-            { description: 'Booleans (bool)', timestampString: '35:05', timestampNumber: 60 * 35 + 5 },
-            { description: 'Fixed-Size Bytes (bytes4)', timestampString: '39:40', timestampNumber: 60 * 39 + 40 },
-            { description: 'Reserved Keywords', timestampString: '45:07', timestampNumber: 60 * 45 + 7 },
-        ],
-        solutionsTimestamp: [
-            { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
-            { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
-            { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
-            { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
-            { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
-        ],
     }
+    // {
+    //     title: "Types",
+    //     image: "/lotus.png",
+    //     description: "Explore primitive types in Solidity (uint, int, bool, address, and more",
+    //     episodeVideo: "2_",
+    //     solutionsVideo: "Episode_Two_1440p.mp4",
+    //     episodeTimestamps: [
+    //         { description: 'Agenda', timestampString: '0:18', timestampNumber: 18 },
+    //         { description: 'Unsigned Integers (uint)', timestampString: '1:40', timestampNumber: 60 + 40 },
+    //         { description: 'Signed Integers (int)', timestampString: '19:22',  timestampNumber: 60 * 19 + 22 },
+    //         { description: 'Addresses (address)', timestampString: '26:20', timestampNumber: 60 * 26 + 20 },
+    //         { description: 'Booleans (bool)', timestampString: '35:05', timestampNumber: 60 * 35 + 5 },
+    //         { description: 'Fixed-Size Bytes (bytes4)', timestampString: '39:40', timestampNumber: 60 * 39 + 40 },
+    //         { description: 'Reserved Keywords', timestampString: '45:07', timestampNumber: 60 * 45 + 7 },
+    //     ],
+    //     solutionsTimestamp: [
+    //         { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+    //         { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+    //         { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+    //         { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+    //         { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+    //     ],
+    // }
 ];

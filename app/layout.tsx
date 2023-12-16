@@ -29,10 +29,7 @@ export const metadata = {
   themeColor: "#000",
 };
 
-const locales = [
-  'en', 'ja', 'zh', 'de', 'hi', 'fr', 'ko', 'pt', 'it', 'es', 'id', 'nl', 'tr', 'tl', 'pl',
-  'sv', 'bg', 'ro', 'ar', 'cs', 'el', 'fi', 'hr', 'ms', 'sk', 'da', 'ta', 'uk', 'ru'
-]
+const locales = ['en', 'ar', 'zh', 'fr', 'de', 'hi', 'id', 'pt', 'ru', 'es', 'tr']
 
 export default async function RootLayout({children, params: {locale}}) {
   return (
@@ -51,7 +48,6 @@ export default async function RootLayout({children, params: {locale}}) {
           <Footer />
         </Suspense>
         <Analytics />
-        
         <Ganalytics />
       </body>
     </html>
