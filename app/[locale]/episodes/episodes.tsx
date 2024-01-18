@@ -285,6 +285,7 @@ export default function Episodes({
                     episodeNumber={index + 1}
                     image={image}
                     premium={premium}
+                    membership={membership}
                   />
                 </div>
               ))}
@@ -310,6 +311,7 @@ export default function Episodes({
                     episodeNumber={index + 1}
                     image={image}
                     premium={premium}
+                    membership={membership}
                   />
                 </div>
               ))}

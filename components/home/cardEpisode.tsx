@@ -53,7 +53,7 @@ export default function CardEpisode({
           </Balancer>
         </h2>
         <div className="leading-normal text-gray-700 text-sm">
-          {description} {membership}
+          {description}
         </div>
       </div>
     </div>
