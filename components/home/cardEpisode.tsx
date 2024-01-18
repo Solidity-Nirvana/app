@@ -12,7 +12,8 @@ export default function CardEpisode({
   image,
   large,
   premium,
-  membership
+  membership,
+  email
 }: {
   title: string;
   difficulty: string;
@@ -22,18 +23,23 @@ export default function CardEpisode({
   large?: boolean;
   premium: boolean;
   membership: string;
+  email: string;
 }) {
   return (
     /// transition duration-500 hover:rotate-6
     <div
-      className={`relative col-span-1 h-80 p-8 hover:border hover:border-green-600 overflow-hidden rounded-xl bg-transparent hover:bg-green-200 transition duration-500 hover:rotate-6${
+      className={`relative col-span-1 h-80 p-8 hover:border hover:border-green-600 overflow-hidden rounded-xl bg-transparent hover:bg-green-200 transition duration-500 ${
         large ? "md:col-span-2" : ""
+      } ${
+        !premium ? "hover:border hover:border-green-600 hover:bg-green-200 hover:rotate-6" : 
+        premium && membership === 'Paid' ? "hover:border hover:border-green-600 hover:bg-green-200 hover:rotate-6" : 
+        "hover:bg-gray-200 hover:border hover:border-gray-400"
       }`}
     >
       <div className="mx-auto max-w-md text-center pb-2">
         <h2 className="bg-gradient-to-br from-black to-zinc-400 bg-clip-text font-display text-xl font-bold text-transparent md:text-xl md:font-normal">
           <Balancer>
-            #{String(episodeNumber)} | {difficulty}
+            #{String(episodeNumber)} - {difficulty} {premium ? '| Premium' : '| Free'}
           </Balancer>
         </h2>
       </div>
@@ -56,6 +62,14 @@ export default function CardEpisode({
           {description}
         </div>
       </div>
+      {premium && membership !== 'Paid' && (
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 p-4">
+        <span className="text-white font-bold text-4xl mb-4">Premium</span>
+        <a target="_blank" href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email} className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Upgrade to Watch
+        </a>
+      </div>
+      )}
     </div>
   );
 }

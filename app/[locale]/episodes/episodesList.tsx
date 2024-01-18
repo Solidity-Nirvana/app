@@ -97,7 +97,7 @@ export const easyEpisodes = [
         title: "Types",
         image: "/nature.png",
         premium: false,
-        description: "Explore the different state variable types in Solidity (uint, int, address, etc.)",
+        description: "Explore the primitive variable types in Solidity (uint, int, address, etc.)",
         episodeVideo: "2_",
         solutionsVideo: "Episoee_One_1440p.mp4",
         episodeTimestamps: [
@@ -119,9 +119,9 @@ export const easyEpisodes = [
     },
     {
         title: "Constructor",
-        image: "/lotus.png",
+        image: "/pose.png",
         premium: true,
-        description: "Design how a contract is deployed to the network using a constructor",
+        description: "All smart contracts call the constructor() function prior to deployment",
         episodeVideo: "3_",
         solutionsVideo: "Episoee_One_1440p.mp4",
         episodeTimestamps: [
