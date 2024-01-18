@@ -65,7 +65,7 @@ export default function CardEpisode({
       {premium && membership !== 'Paid' && (
       <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 p-4">
         <span className="text-white font-bold text-4xl mb-4">Premium</span>
-        <a target="_blank" href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email} className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        <a target="_blank" rel="noreferrer noopener" href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email} className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Upgrade to Watch
         </a>
       </div>
