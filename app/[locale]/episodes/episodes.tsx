@@ -286,22 +286,28 @@ export default function Episodes({
                     image={image}
                     premium={premium}
                     membership={membership}
+                    email={session.user.email}
                   />
                 </div>
               ))}
 
               {difficulty === t('Easy') && episode === 'none' && easyEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp, premium }, index) => (
                 <div key={title} onClick={() => {
-                  setVideoUrl('');
-                  setEpisode(title); 
-                  setEpisodeVideo(episodeVideo);
-                  setSolutionVideo(solutionsVideo);
-                  setImage(image); 
-                  setEpisodeNumber(String(index + 1));
-                  setTimestampsEpisode(episodeTimestamps);
-                  setTimestampsSolutions(solutionsTimestamp);
-                  fetchSignedUrl(episodeVideo + locale + ".mp4");
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                    if (!premium || premium && membership == 'Paid') {
+                      setVideoUrl('');
+                      setEpisode(title); 
+                      setEpisodeVideo(episodeVideo);
+                      setSolutionVideo(solutionsVideo);
+                      setImage(image); 
+                      setEpisodeNumber(String(index + 1));
+                      setTimestampsEpisode(episodeTimestamps);
+                      setTimestampsSolutions(solutionsTimestamp);
+                      fetchSignedUrl(episodeVideo + locale + ".mp4");
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                    else {
+
+                    }
                 }}>
                   <CardEpisode
                     key={title}
@@ -312,6 +318,7 @@ export default function Episodes({
                     image={image}
                     premium={premium}
                     membership={membership}
+                    email={session.user.email}
                   />
                 </div>
               ))}

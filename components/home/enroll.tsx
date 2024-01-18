@@ -252,7 +252,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
 
   //         <a
   //           className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
-  //           href={"https://enroll.soliditynirvana.com/b/cN25nfeXc9nrglq3cf?prefilled_email=" + email}
+  //           href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email}
   //           target="_blank"
   //           rel="noreferrer"
   //         >
@@ -341,7 +341,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
 
   //         <a
   //           className="mt-8 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
-  //           href={"https://enroll.soliditynirvana.com/b/14kcPHg1garv5GM6oq?prefilled_email=" + email}
+  //           href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email}
   //           target="_blank"
   //           rel="noreferrer"
   //         >
