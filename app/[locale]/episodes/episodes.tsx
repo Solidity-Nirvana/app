@@ -264,7 +264,7 @@ export default function Episodes({
             </div>}
             
             <div className="my-10 grid w-full max-w-screen-xl md:grid-cols-3">
-              {difficulty === 'Introduction' && episode === 'none' && introEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp }, index) => (
+              {difficulty === 'Introduction' && episode === 'none' && introEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp, premium }, index) => (
                 <div key={title} onClick={() => {
                   setVideoUrl('');
                   setEpisode(title);
@@ -284,11 +284,13 @@ export default function Episodes({
                     description={description}
                     episodeNumber={index + 1}
                     image={image}
+                    premium={premium}
+                    membership={membership}
                   />
                 </div>
               ))}
 
-              {difficulty === t('Easy') && episode === 'none' && easyEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp }, index) => (
+              {difficulty === t('Easy') && episode === 'none' && easyEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp, premium }, index) => (
                 <div key={title} onClick={() => {
                   setVideoUrl('');
                   setEpisode(title); 
@@ -308,6 +310,8 @@ export default function Episodes({
                     description={description}
                     episodeNumber={index + 1}
                     image={image}
+                    premium={premium}
+                    membership={membership}
                   />
                 </div>
               ))}

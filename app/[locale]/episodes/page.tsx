@@ -48,6 +48,8 @@ export default async function Nav() {
   const messages = (await import(`../../../messages/${locale}.json`))
 
   const member = await fetchData();
+  console.log('test');
+  console.log(member.membership);
   const session = await getServerSession(authOptions);
   return <NextIntlClientProvider messages={messages}><Episodes session={session} membership={member.membership} locale={locale} /></NextIntlClientProvider>;
 }

@@ -11,6 +11,8 @@ export default function CardEpisode({
   description,
   image,
   large,
+  premium,
+  membership
 }: {
   title: string;
   difficulty: string;
@@ -18,6 +20,8 @@ export default function CardEpisode({
   description: string;
   image: string;
   large?: boolean;
+  premium: boolean;
+  membership: string;
 }) {
   return (
     /// transition duration-500 hover:rotate-6
