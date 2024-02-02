@@ -185,8 +185,8 @@ export default async function Home() {
             rel="noopener noreferrer"
           >
             <Github />
-            <p>
-              <span className="hidden sm:inline-block">Github</span>
+            <p className="hidden sm:inline-block">
+              <span>Github</span>
               {/* {' '}
               <span className="font-semibold">{nFormatter(stars)} ⭐</span> */}
             </p>
@@ -198,19 +198,19 @@ export default async function Home() {
             rel="noopener noreferrer"
           >
             <Twitter />
-            <p>
-              <span className="hidden sm:inline-block">Twitter</span>
+            <p className="hidden sm:inline-block">
+              <span>Twitter</span>
             </p>
           </a>
           <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-400 bg-green-200 px-5 py-1 text-sm text-slate-600 shadow-md transition-colors hover:bg-green-300 hover:border-gray-800"
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-400 bg-purple-200 px-5 py-1 text-sm text-slate-600 shadow-md transition-colors hover:bg-purple-300 hover:border-gray-800"
             href="https://discord.gg/uUJkMHYngH"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Discord />
-            <p>
-              <span className="hidden sm:inline-block">Discord</span>
+            <p className="hidden sm:inline-block">
+              <span>Discord</span>
             </p>
           </a>
         </div>

@@ -5,7 +5,7 @@ export default function Discord({ className }: { className?: string }) {
         width="25"
         height="25"
         viewBox="0 0 24 24"
-        className="mt-2"
+        className={"mt-2"}
       >
         <path
           fill="currentColor"
