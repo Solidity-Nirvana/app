@@ -14,7 +14,7 @@
       "Logout": "Sair",
       "Embrace": "Abrace o código, enriqueça a alma.",
       "Welcome": "Bem-vindo ao Solidity Nirvana",
-      "Sign In": "Entrar",
+      "Sign In": "Inscrever-se - Entrar",
       "Sign In With": "Entrar com",
       "Agree": "Ao fazer login, você concorda com os Termos de Uso e a Política de Privacidade abaixo."
     },
@@ -30,12 +30,7 @@
       "Back": "Voltar"
     },
     "Enroll": {
-      "2 Free": "2 episódios gratuitos - Comece sua jornada",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "Inscreva-se - Grátis",
-      "Awaken": "Desperte sua mente. Realize seu potencial. Junte-se ao nosso boletim informativo.",
-      "Welcome": "Bem-vindo a",
-      "Begin": "Comece a Aprender",
-      "AwakenLess": "Desperte sua mente. Realize seu potencial."
+      "Sign Up - Sign In": "Inscrever-se - Entrar",
+      "Watch Episodes": "Assistir Episódios"
     }
   }

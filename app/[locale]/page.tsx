@@ -161,7 +161,9 @@ export default async function Home() {
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           ></Image>
         </div>
+
         <br />
+        
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-green-600 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -174,6 +176,15 @@ export default async function Home() {
         >
           <Balancer>{t('Ultimate')}</Balancer>
         </h3>
+
+
+        <div>
+          <NextIntlClientProvider messages={messages}>
+            <Enroll session={session} membership={member.membership} />
+          </NextIntlClientProvider>
+        </div>
+
+
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -214,14 +225,14 @@ export default async function Home() {
             </p>
           </a>
         </div>
-        <p
+        {/* <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>
           {t('Enroll')}
           </Balancer>
-        </p>
+        </p> */}
         {/* <br />
         <a
           href="https://twitter.com/SolidityNirvana"
@@ -253,11 +264,6 @@ export default async function Home() {
       </div>
       <br />
       <br />
-      <div>
-        <NextIntlClientProvider messages={messages}>
-          <Enroll session={session} membership={member.membership} />
-        </NextIntlClientProvider>
-      </div>
     </>
   );
 }

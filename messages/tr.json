@@ -14,7 +14,7 @@
       "Logout": "Çıkış Yap",
       "Embrace": "Kodu benimse, ruhu zenginleştir.",
       "Welcome": "Solidity Nirvana'ya Hoş Geldiniz",
-      "Sign In": "Giriş Yap",
+      "Sign In": "Kaydol - Giriş Yap",
       "Sign In With": "İle Giriş Yap",
       "Agree": "Giriş yaparak, hem aşağıdaki Kullanım Koşulları hem de Gizlilik Politikasını kabul edersiniz."
     },
@@ -30,12 +30,7 @@
       "Back": "Geri"
     },
     "Enroll": {
-      "2 Free": "2 Ücretsiz Bölüm - Yolculuğunuza Başlayın",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "Kaydolun - Ücretsiz",
-      "Awaken": "Zihninizi uyandırın. Potansiyelinizi fark edin. Bültenimize katılın.",
-      "Welcome": "Hoş Geldiniz",
-      "Begin": "Öğrenmeye Başla",
-      "AwakenLess": "Zihninizi uyandırın. Potansiyelinizi fark edin."
+      "Sign Up - Sign In": "Kaydol - Giriş Yap",
+      "Watch Episodes": "Bölümleri İzle"
     }
   }

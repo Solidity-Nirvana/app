@@ -14,7 +14,7 @@
       "Logout": "登出",
       "Embrace": "拥抱代码，丰富灵魂。",
       "Welcome": "欢迎来到Solidity Nirvana",
-      "Sign In": "登录",
+      "Sign In": "注册 - 登录",
       "Sign In With": "使用以下方式登录",
       "Agree": "通过登录，您同意以下的使用条款和隐私政策。"
     },
@@ -30,13 +30,8 @@
       "Back": "返回"
     },
     "Enroll": {
-      "2 Free": "2个免费剧集 - 开始你的旅程",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "注册 - 免费",
-      "Awaken": "唤醒你的思想。实现你的潜能。加入我们的新闻通讯。",
-      "Welcome": "欢迎来到",
-      "Begin": "开始学习",
-      "AwakenLess": "唤醒你的思想。实现你的潜能。"
+      "Sign Up - Sign In": "注册 - 登录",
+      "Watch Episodes": "观看剧集"
     }
   }
   
