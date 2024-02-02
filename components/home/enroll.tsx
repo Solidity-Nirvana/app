@@ -28,9 +28,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
     </div>
   );
 
-  // else if (membership == 'Free') return (
-
-  else return (
+  else if (membership == 'Free') return (
     <div className="relative text-left max-w-xl">
         <div className="text-center">
           <a
@@ -44,10 +42,25 @@ export default function Enroll({ session, membership }: { session: Session | nul
         <div className="text-center">
           <a
             className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
+            href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {t('Early Access - $50')}
+          </a>
+        </div>
+    </div>
+  )
+
+  else return (
+    <div className="relative text-left max-w-xl">
+        <div className="text-center">
+          <a
+            className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
             href={"/episodes"}
             rel="noreferrer"
           >
-            {t('Early Access - $50')}
+            {t('Watch Episodes')}
           </a>
         </div>
     </div>

@@ -14,7 +14,7 @@
       "Logout": "Çıkış Yap",
       "Embrace": "Kodu benimse, ruhu zenginleştir.",
       "Welcome": "Solidity Nirvana'ya Hoş Geldiniz",
-      "Sign In": "Kaydol - Giriş Yap",
+      "Sign In": "Kaydol / Giriş Yap",
       "Sign In With": "İle Giriş Yap",
       "Agree": "Giriş yaparak, hem aşağıdaki Kullanım Koşulları hem de Gizlilik Politikasını kabul edersiniz."
     },
@@ -30,7 +30,8 @@
       "Back": "Geri"
     },
     "Enroll": {
-      "Sign Up - Sign In": "Kaydol - Giriş Yap",
-      "Watch Episodes": "Bölümleri İzle"
+      "Sign Up - Sign In": "Kaydol / Giriş Yap",
+      "Watch Episodes": "Bölümleri İzle",
+      "Early Access - $50": "Erken Erişim - $50"
     }
   }

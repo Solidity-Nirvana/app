@@ -14,7 +14,7 @@
       "Logout": "Keluar",
       "Embrace": "Peluk kode itu, memperkaya jiwa.",
       "Welcome": "Selamat datang di Solidity Nirvana",
-      "Sign In": "Daftar - Masuk",
+      "Sign In": "Daftar / Masuk",
       "Sign In With": "Masuk dengan",
       "Agree": "Dengan masuk, Anda setuju dengan Ketentuan Penggunaan dan Kebijakan Privasi di bawah ini."
     },
@@ -31,6 +31,7 @@
     },
     "Enroll": {
       "Sign Up - Sign In": "Daftar - Masuk",
-      "Watch Episodes": "Tonton Episode"
+      "Watch Episodes": "Tonton Episode",
+      "Early Access - $50": "Akses Dini / $50"
     }
   }

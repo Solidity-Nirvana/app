@@ -14,7 +14,7 @@
     "Logout": "Logout",
     "Embrace": "Embrace the code, enrich the soul.",
     "Welcome": "Welcome to Solidity Nirvana",
-    "Sign In": "Sign Up - Sign In",
+    "Sign In": "Sign Up / Sign In",
     "Sign In With": "Sign In with",
     "Agree": "By signing in, you agree to both the Terms of Use and the Privacy Policy below."
   },
@@ -30,7 +30,8 @@
     "Back": "Back"
   },
   "Enroll": {
-    "Sign Up - Sign In": "Sign Up - Sign In",
-    "Watch Episodes": "Watch Episodes"
+    "Sign Up - Sign In": "Sign Up / Sign In",
+    "Watch Episodes": "Watch Episodes",
+    "Early Access - $50": "Early Access - $50"
   }
 }

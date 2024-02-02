@@ -14,7 +14,7 @@
     "Logout": "Abmelden",
     "Embrace": "Umarme den Code, bereichere die Seele.",
     "Welcome": "Willkommen bei Solidity Nirvana",
-    "Sign In": "Registrieren - Anmelden",
+    "Sign In": "Registrieren / Anmelden",
     "Sign In With": "Anmelden mit",
     "Agree": "Durch die Anmeldung erklären Sie sich sowohl mit den unten stehenden Nutzungsbedingungen als auch der Datenschutzrichtlinie einverstanden."
   },
@@ -30,7 +30,8 @@
     "Back": "Zurück"
   },
   "Enroll": {
-    "Sign Up - Sign In": "Registrieren - Anmelden",
-    "Watch Episodes": "Folgen ansehen"
+    "Sign Up - Sign In": "Registrieren / Anmelden",
+    "Watch Episodes": "Folgen ansehen",
+    "Early Access - $50": "Frühzeitiger Zugang - $50"
   }
 }
