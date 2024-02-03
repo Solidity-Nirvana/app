@@ -264,33 +264,6 @@ export default function Episodes({
             </div>}
             
             <div className="my-10 grid w-full max-w-screen-xl md:grid-cols-3">
-              {difficulty === 'Introduction' && episode === 'none' && introEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp, premium }, index) => (
-                <div key={title} onClick={() => {
-                  setVideoUrl('');
-                  setEpisode(title);
-                  setEpisodeVideo(episodeVideo);
-                  setSolutionVideo(solutionsVideo);
-                  setImage(image); 
-                  setEpisodeNumber(String(index + 1));
-                  setTimestampsEpisode(episodeTimestamps);
-                  setTimestampsSolutions(solutionsTimestamp);
-                  fetchSignedUrl(episodeVideo);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}>
-                  <CardEpisode
-                    key={title}
-                    title={title}
-                    difficulty={difficulty}
-                    description={description}
-                    episodeNumber={index + 1}
-                    image={image}
-                    premium={premium}
-                    membership={membership}
-                    email={session.user.email}
-                  />
-                </div>
-              ))}
-
               {difficulty === t('Easy') && episode === 'none' && easyEpisodes.map(({ title, description, image, episodeVideo, solutionsVideo, episodeTimestamps, solutionsTimestamp, premium }, index) => (
                 <div key={title} onClick={() => {
                     if (!premium || premium && membership == 'Paid') {
@@ -319,6 +292,9 @@ export default function Episodes({
                     premium={premium}
                     membership={membership}
                     email={session.user.email}
+                    freeText={t('Free')}
+                    upgradeText={t('Upgrade')}
+                    premiumText={t('Premium')}
                   />
                 </div>
               ))}

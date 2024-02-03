@@ -13,7 +13,10 @@ export default function CardEpisode({
   large,
   premium,
   membership,
-  email
+  email,
+  freeText,
+  upgradeText,
+  premiumText
 }: {
   title: string;
   difficulty: string;
@@ -24,6 +27,9 @@ export default function CardEpisode({
   premium: boolean;
   membership: string;
   email: string;
+  freeText: string;
+  upgradeText: string;
+  premiumText: string;
 }) {
   return (
     /// transition duration-500 hover:rotate-6
@@ -39,7 +45,7 @@ export default function CardEpisode({
       <div className="mx-auto max-w-md text-center pb-2">
         <h2 className="bg-gradient-to-br from-black to-zinc-400 bg-clip-text font-display text-xl font-bold text-transparent md:text-xl md:font-normal">
           <Balancer>
-            #{String(episodeNumber)} - {difficulty} {premium ? '| Premium' : '| Free'}
+            #{String(episodeNumber)} - {difficulty} {premium ? '| ' + premiumText : '| ' + freeText}
           </Balancer>
         </h2>
       </div>
@@ -63,12 +69,12 @@ export default function CardEpisode({
         </div>
       </div>
       {premium && membership !== 'Paid' && (
-      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 p-4">
-        <span className="text-white font-bold text-4xl mb-4">Premium</span>
-        <a target="_blank" rel="noreferrer noopener" href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email} className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-          Upgrade to Watch
-        </a>
-      </div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 bg-green-700 opacity-100 md:opacity-0 hover:opacity-100 transition-opacity duration-500 p-4">
+          <span className="text-white font-bold text-4xl mb-4">{premiumText}</span>
+          <a target="_blank" rel="noreferrer noopener" href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email} className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+            {upgradeText}
+          </a>
+        </div>
       )}
     </div>
   );

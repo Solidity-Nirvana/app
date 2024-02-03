@@ -80,13 +80,13 @@ export default async function Home() {
 
   const features = [
     {
-      title: t('Worldclass Expertise'),
-      description: t('From developers'),
+      title: t('Early Access'),
+      description: t('$200 -> $50'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
-              src="/knowledge.png"
+              src="/pose2.png"
               alt="From Within"
               width="200"
               height="200"
@@ -95,13 +95,13 @@ export default async function Home() {
       ),
     },
     {
-      title: t('Slow & Steady'),
+      title: t('21+ Episodes'),
       description: t('We will guide'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
-              src="/nature.png"
+              src="/waterfall.png"
               alt="From Within"
               width="200"
               height="200"
@@ -110,13 +110,43 @@ export default async function Home() {
       ),
     },
     {
-      title: t('Student Discounts'),
-      description: t('Students are eligible'),
+      title: t('Solidity Puzzles'),
+      description: t('Foundry-rs'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
               src="/school.png"
+              alt="From Within"
+              width="200"
+              height="200"
+            ></Image>
+        </div>
+      ),
+    },
+    {
+      title: t('10+ Languages'),
+      description: t('Multi-language'),
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+            <Image
+              style={{ borderRadius: '50%', overflow: 'hidden' }}
+              src="/lotus.png"
+              alt="From Within"
+              width="200"
+              height="200"
+            ></Image>
+        </div>
+      ),
+    },
+    {
+      title: t('Discord Community'),
+      description: t('Support'),
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+            <Image
+              style={{ borderRadius: '50%', overflow: 'hidden' }}
+              src="/class2.png"
               alt="From Within"
               width="200"
               height="200"
@@ -165,13 +195,13 @@ export default async function Home() {
         <br />
         
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-green-600 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-black to-green-600 bg-clip-text text-center font-display text-5xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>{t('Solidity Nirvana')}</Balancer>
         </h1>
         <h3
-          className="animate-fade-up bg-gradient-to-br from-green-800 to-black bg-clip-text text-center font-display text-2xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-3xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-green-800 uppercase to-black bg-clip-text text-center py-2 md:py-0 font-display text-xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-2xl md:leading-[4rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>{t('Ultimate')}</Balancer>

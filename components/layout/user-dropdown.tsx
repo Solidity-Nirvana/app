@@ -10,7 +10,9 @@ import { Session } from "next-auth";
 import {useTranslations} from 'next-intl';
 
 export default function UserDropdown({ session }: { session: Session }) {
+  
   const { email, image } = session?.user || {};
+
   const [openPopover, setOpenPopover] = useState(false);
 
   const t = useTranslations('Home');
@@ -21,26 +23,28 @@ export default function UserDropdown({ session }: { session: Session }) {
     <div className="flex inline-block text-left">
       <Popover
         content={
-          <div className="w-full rounded-md bg-white p-2 sm:w-56">
+          <div className="flex w-full rounded-md bg-white p-2 sm:w-100">
 
             <a href="/episodes">
               <button
-                className="relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
+                className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
               >
                 <Video className="h-4 w-4" />
                 <p className="text-sm">{t('Episodes')}</p>
               </button>
             </a>
+            <br />
             <a href="/dashboard">
               <button
-                className="relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
+                className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
               >
                 <AlignStartHorizontal className="h-4 w-4" />
                 <p className="text-sm">{t('Dashboard')}</p>
               </button>
             </a>
+            <br />
             <button
-              className="relative flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
+              className="flex w-full items-center justify-start space-x-2 rounded-md p-2 text-left text-sm transition-all duration-75 hover:bg-gray-100"
               onClick={() => signOut({callbackUrl: `${window.location.origin}`})}
             >
               <LogOut className="h-4 w-4" />
@@ -48,7 +52,7 @@ export default function UserDropdown({ session }: { session: Session }) {
             </button>
           </div>
         }
-        align="end"
+        align={"end"}
         openPopover={openPopover}
         setOpenPopover={setOpenPopover}
       >
