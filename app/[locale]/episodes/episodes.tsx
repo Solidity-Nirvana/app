@@ -191,7 +191,6 @@ export default function Episodes({
                   videoUrl !== '' && (mode === t('Episode') || mode === 'Solutions') && <ReactPlayer
                     url={videoUrl}
                     className="react-player"
-                    playing
                     width="100%"
                     height="100%"
                     controls={true}
