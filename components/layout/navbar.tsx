@@ -71,7 +71,7 @@ export default function NavBar({ session }: { session: Session | null }) {
                 </span>
               )}
             </div>  
-            <div  className="m-3">
+            <div className="m-3">
             {session ? (
               <UserDropdown session={session} />
             ) : (

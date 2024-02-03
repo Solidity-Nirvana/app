@@ -1,14 +1,18 @@
 {
     "Home": {
       "Solidity Nirvana": "Solidity Nirvana",
-      "Ultimate": "O guia definitivo para Solidity.",
+      "Ultimate": "O guia definitivo para Solidity",
       "Enroll": "Inscreva-se abaixo, receba atualizações para o nosso lançamento em 2024!",
-      "Worldclass Expertise": "Expertise de Classe Mundial",
-      "From developers": "De desenvolvedores que construíram protocolos ao vivo e arquitetaram sistemas financeiros escaláveis; SolidityNirvana é construído por profissionais, para profissionais",
-      "Slow & Steady": "Lento e Constante",
-      "We will guide": "Nós o guiaremos no seu caminho para a iluminação, garantindo total compreensão ao longo do caminho e fornecendo suporte valioso quando necessário",
-      "Student Discounts": "Descontos para Estudantes",
-      "Students are eligible": "Estudantes têm direito a descontos; nosso objetivo é fomentar a próxima geração de engenheiros talentosos e bem treinados",
+      "Early Access": "Acesso Antecipado - Desconto de 75%",
+      "$200 -> $50": "Registre-se hoje para acesso antecipado ao curso Fácil e receba um desconto de 75% ($200 -> $50)",
+      "21+ Episodes": "21+ Episódios",
+      "We will guide": "Nós iremos guiar você em seu caminho para a iluminação, garantindo que você alcance uma compreensão completa em mais de 21 episódios de fundamentos",
+      "Solidity Puzzles": "Quebra-cabeças de Solidity",
+      "Foundry-rs": "Reforce seu conhecimento com casos de teste baseados em quebra-cabeças de Solidity, construídos com foundry-rs",
+      "10+ Languages": "10+ Idiomas",
+      "Multi-language": "Suporte completo de idiomas para mais de 10 idiomas, com áudio gerado por IA para os episódios",
+      "Discord Community": "Comunidade no Discord",
+      "Support": "Obtenha suporte de desenvolvedores Solidity profissionais no nosso Discord, e converse com outros membros sobre sua jornada",
       "Episodes": "Episódios",
       "Dashboard": "Painel de Controle",
       "Logout": "Sair",
@@ -27,15 +31,14 @@
       "Episodes": "Episódios",
       "Episode": "Episódio",
       "Agenda": "Agenda",
-      "Back": "Voltar"
+      "Back": "Voltar",
+      "Free": "Grátis",
+      "Premium": "Premium",
+      "Upgrade": "Fazer upgrade para Assistir"
     },
     "Enroll": {
-      "2 Free": "2 episódios gratuitos - Comece sua jornada",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "Inscreva-se - Grátis",
-      "Awaken": "Desperte sua mente. Realize seu potencial. Junte-se ao nosso boletim informativo.",
-      "Welcome": "Bem-vindo a",
-      "Begin": "Comece a Aprender",
-      "AwakenLess": "Desperte sua mente. Realize seu potencial."
+      "Sign Up - Sign In": "Inscrever-se / Entrar",
+      "Watch Episodes": "Assistir Episódios",
+      "Early Access - $50": "Acesso Antecipado - $50"
     }
   }

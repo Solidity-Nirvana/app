@@ -1,14 +1,18 @@
 {
     "Home": {
       "Solidity Nirvana": "Solidity Nirvana",
-      "Ultimate": "Panduan utama untuk Solidity.",
+      "Ultimate": "Panduan utama untuk Solidity",
       "Enroll": "Daftar di bawah, terima pembaruan untuk peluncuran kami tahun 2024!",
-      "Worldclass Expertise": "Keahlian Kelas Dunia",
-      "From developers": "Dari pengembang yang telah membangun protokol langsung dan merancang sistem keuangan yang dapat diskalakan; SolidityNirvana dibuat oleh profesional, untuk profesional",
-      "Slow & Steady": "Lambat dan Mantap",
-      "We will guide": "Kami akan memandu Anda di jalan menuju pencerahan, memastikan Anda memahami sepenuhnya sepanjang jalan dan menyediakan dukungan yang berharga bila diperlukan",
-      "Student Discounts": "Diskon Mahasiswa",
-      "Students are eligible": "Mahasiswa berhak mendapatkan diskon; tujuan kami adalah untuk membina generasi berikutnya dari insinyur yang berbakat dan terlatih dengan baik",
+      "Early Access": "Akses Dini - Diskon 75%",
+      "$200 -> $50": "Daftar hari ini untuk akses dini ke kursus Easy dan terima diskon 75% ($200 -> $50)",
+      "21+ Episodes": "21+ Episode",
+      "We will guide": "Kami akan membimbing Anda di jalan menuju pencerahan, memastikan Anda mencapai pemahaman penuh melalui lebih dari 21 episode dasar",
+      "Solidity Puzzles": "Teka-teki Solidity",
+      "Foundry-rs": "Perkuat pengetahuan Anda dengan kasus tes Solidity berbasis teka-teki, dibangun dengan foundry-rs",
+      "10+ Languages": "10+ Bahasa",
+      "Multi-language": "Dukungan bahasa penuh untuk lebih dari 10 bahasa, dengan audio yang dihasilkan AI untuk episode",
+      "Discord Community": "Komunitas Discord",
+      "Support": "Dapatkan dukungan dari pengembang Solidity profesional di Discord kami, dan bicarakan dengan anggota lain tentang perjalanan Anda",
       "Episodes": "Episode",
       "Dashboard": "Dasbor",
       "Logout": "Keluar",
@@ -27,15 +31,14 @@
       "Episodes": "Episode",
       "Episode": "Episode",
       "Agenda": "Agenda",
-      "Back": "Kembali"
+      "Back": "Kembali",
+      "Free": "Gratis",
+      "Premium": "Premium",
+      "Upgrade": "Upgrade untuk Menonton"
     },
     "Enroll": {
-      "2 Free": "2 Episode Gratis - Mulai Perjalanan Anda",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "Daftar - Gratis",
-      "Awaken": "Bangunkan pikiran Anda. Sadari potensi Anda. Bergabunglah dengan buletin kami.",
-      "Welcome": "Selamat datang di",
-      "Begin": "Mulai Belajar",
-      "AwakenLess": "Bangunkan pikiran Anda. Sadari potensi Anda."
+      "Sign Up - Sign In": "Daftar - Masuk",
+      "Watch Episodes": "Tonton Episode",
+      "Early Access - $50": "Akses Dini / $50"
     }
   }

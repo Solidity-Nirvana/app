@@ -2,6 +2,8 @@ import { ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import Balancer from "react-wrap-balancer";
 
+import {useTranslations} from 'next-intl';
+
 export default function Card({
   title,
   description,
@@ -13,6 +15,9 @@ export default function Card({
   demo: ReactNode;
   large?: boolean;
 }) {
+
+  const t = useTranslations('Enroll');
+  
   return (
     <div
       className={`relative col-span-1 h-96 overflow-hidden rounded-xl bg-transparent ${

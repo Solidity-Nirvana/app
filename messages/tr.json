@@ -1,14 +1,18 @@
 {
     "Home": {
       "Solidity Nirvana": "Solidity Nirvana",
-      "Ultimate": "Solidity için nihai rehber.",
+      "Ultimate": "Solidity için nihai rehber",
       "Enroll": "Aşağıdan kaydolun, 2024 lansmanımız için güncellemeler alın!",
-      "Worldclass Expertise": "Dünya Çapında Uzmanlık",
-      "From developers": "Canlı protokoller geliştiren ve ölçeklenebilir finans sistemleri tasarlayan geliştiricilerden; SolidityNirvana, profesyoneller tarafından, profesyoneller için inşa edilmiştir",
-      "Slow & Steady": "Yavaş ve İstikrarlı",
-      "We will guide": "Aydınlanma yolunuzda size rehberlik edeceğiz, yol boyunca tam anlayışınızı sağlayacak ve gerektiğinde değerli destek sağlayacağız",
-      "Student Discounts": "Öğrenci İndirimleri",
-      "Students are eligible": "Öğrenciler indirimlerden yararlanabilir; amacımız yetenekli ve iyi eğitimli mühendislerin yeni neslini yetiştirmektir",
+      "Early Access": "Erken Erişim - %75 İndirim",
+      "$200 -> $50": "Bugün Easy kursuna erken erişim için kaydolun ve %75 indirim alın ($200 -> $50)",
+      "21+ Episodes": "21+ Bölüm",
+      "We will guide": "Aydınlanma yolunuzda size rehberlik edeceğiz, temel bilgilerin 21+ bölümünde tam anlama ulaşmanızı sağlayacağız",
+      "Solidity Puzzles": "Solidity Bulmacaları",
+      "Foundry-rs": "Foundry-rs ile inşa edilmiş, bulmaca tabanlı Solidity test vakaları ile bilginizi pekiştirin",
+      "10+ Languages": "10+ Dil",
+      "Multi-language": "10+ dil için tam dil desteği, bölümler için AI tarafından üretilen ses ile",
+      "Discord Community": "Discord Topluluğu",
+      "Support": "Discord’umuzda profesyonel Solidity geliştiricilerinden destek alın ve yolculuğunuz hakkında diğer üyelerle konuşun",
       "Episodes": "Bölümler",
       "Dashboard": "Gösterge Paneli",
       "Logout": "Çıkış Yap",
@@ -27,15 +31,14 @@
       "Episodes": "Bölümler",
       "Episode": "Bölüm",
       "Agenda": "Gündem",
-      "Back": "Geri"
+      "Back": "Geri",
+      "Free": "Ücretsiz",
+      "Premium": "Premium",
+      "Upgrade": "İzlemek için Yükselt"
     },
     "Enroll": {
-      "2 Free": "2 Ücretsiz Bölüm - Yolculuğunuza Başlayın",
-      "Solidity Nirvana": "Solidity Nirvana",
-      "Enroll": "Kaydolun - Ücretsiz",
-      "Awaken": "Zihninizi uyandırın. Potansiyelinizi fark edin. Bültenimize katılın.",
-      "Welcome": "Hoş Geldiniz",
-      "Begin": "Öğrenmeye Başla",
-      "AwakenLess": "Zihninizi uyandırın. Potansiyelinizi fark edin."
+      "Sign Up - Sign In": "Kaydol / Giriş Yap",
+      "Watch Episodes": "Bölümleri İzle",
+      "Early Access - $50": "Erken Erişim - $50"
     }
   }

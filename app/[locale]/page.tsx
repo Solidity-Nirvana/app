@@ -80,13 +80,13 @@ export default async function Home() {
 
   const features = [
     {
-      title: t('Worldclass Expertise'),
-      description: t('From developers'),
+      title: t('Early Access'),
+      description: t('$200 -> $50'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
-              src="/knowledge.png"
+              src="/pose2.png"
               alt="From Within"
               width="200"
               height="200"
@@ -95,13 +95,13 @@ export default async function Home() {
       ),
     },
     {
-      title: t('Slow & Steady'),
+      title: t('21+ Episodes'),
       description: t('We will guide'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
-              src="/nature.png"
+              src="/waterfall.png"
               alt="From Within"
               width="200"
               height="200"
@@ -110,13 +110,43 @@ export default async function Home() {
       ),
     },
     {
-      title: t('Student Discounts'),
-      description: t('Students are eligible'),
+      title: t('Solidity Puzzles'),
+      description: t('Foundry-rs'),
       demo: (
         <div className="flex items-center justify-center space-x-20">
             <Image
               style={{ borderRadius: '50%', overflow: 'hidden' }}
               src="/school.png"
+              alt="From Within"
+              width="200"
+              height="200"
+            ></Image>
+        </div>
+      ),
+    },
+    {
+      title: t('10+ Languages'),
+      description: t('Multi-language'),
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+            <Image
+              style={{ borderRadius: '50%', overflow: 'hidden' }}
+              src="/lotus.png"
+              alt="From Within"
+              width="200"
+              height="200"
+            ></Image>
+        </div>
+      ),
+    },
+    {
+      title: t('Discord Community'),
+      description: t('Support'),
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+            <Image
+              style={{ borderRadius: '50%', overflow: 'hidden' }}
+              src="/class2.png"
               alt="From Within"
               width="200"
               height="200"
@@ -161,19 +191,30 @@ export default async function Home() {
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           ></Image>
         </div>
+
         <br />
+        
         <h1
-          className="animate-fade-up bg-gradient-to-br from-black to-green-600 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-black to-green-600 bg-clip-text text-center font-display text-5xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>{t('Solidity Nirvana')}</Balancer>
         </h1>
         <h3
-          className="animate-fade-up bg-gradient-to-br from-green-800 to-black bg-clip-text text-center font-display text-2xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-3xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-br from-green-800 uppercase to-black bg-clip-text text-center py-2 md:py-0 font-display text-xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-2xl md:leading-[4rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>{t('Ultimate')}</Balancer>
         </h3>
+
+
+        <div>
+          <NextIntlClientProvider messages={messages}>
+            <Enroll session={session} membership={member.membership} />
+          </NextIntlClientProvider>
+        </div>
+
+
         <div
           className="mx-auto mt-6 flex animate-fade-up items-center justify-center space-x-5 opacity-0"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -185,8 +226,8 @@ export default async function Home() {
             rel="noopener noreferrer"
           >
             <Github />
-            <p>
-              <span className="hidden sm:inline-block">Github</span>
+            <p className="hidden sm:inline-block">
+              <span>Github</span>
               {/* {' '}
               <span className="font-semibold">{nFormatter(stars)} ⭐</span> */}
             </p>
@@ -198,30 +239,30 @@ export default async function Home() {
             rel="noopener noreferrer"
           >
             <Twitter />
-            <p>
-              <span className="hidden sm:inline-block">Twitter</span>
+            <p className="hidden sm:inline-block">
+              <span>Twitter</span>
             </p>
           </a>
           <a
-            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-400 bg-green-200 px-5 py-1 text-sm text-slate-600 shadow-md transition-colors hover:bg-green-300 hover:border-gray-800"
+            className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-400 bg-purple-200 px-5 py-1 text-sm text-slate-600 shadow-md transition-colors hover:bg-purple-300 hover:border-gray-800"
             href="https://discord.gg/uUJkMHYngH"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Discord />
-            <p>
-              <span className="hidden sm:inline-block">Discord</span>
+            <p className="hidden sm:inline-block">
+              <span>Discord</span>
             </p>
           </a>
         </div>
-        <p
+        {/* <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           <Balancer>
           {t('Enroll')}
           </Balancer>
-        </p>
+        </p> */}
         {/* <br />
         <a
           href="https://twitter.com/SolidityNirvana"
@@ -253,11 +294,6 @@ export default async function Home() {
       </div>
       <br />
       <br />
-      <div>
-        <NextIntlClientProvider messages={messages}>
-          <Enroll session={session} membership={member.membership} />
-        </NextIntlClientProvider>
-      </div>
     </>
   );
 }

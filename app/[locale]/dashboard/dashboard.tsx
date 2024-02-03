@@ -7,7 +7,7 @@ import Generic from "@/components/shared/generic";
 
 import {useTranslations} from 'next-intl';
 
-export default function Dashboard({ session }: { session: Session | null }) {
+export default function Dashboard({ session, membership }: { session: Session | null, membership: string }) {
 
   const { email, image } = session?.user || {};
 

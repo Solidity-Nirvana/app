@@ -58,7 +58,8 @@ const SignInModal = ({
             ) : (
               <>
                 <Google className="h-5 w-5" />
-                <p>{t('Sign In With')} Google</p>
+                {/* {t('Sign In With')}  */}
+                <p>Google</p>
               </>
             )}
           </button>
@@ -80,7 +81,8 @@ const SignInModal = ({
             ) : (
               <>
                 <Github className="h-5 w-5" />
-                <p>{t('Sign In With')} Github</p>
+                {/* {t('Sign In With')}  */}
+                <p>Github</p>
               </>
             )}
           </button>
