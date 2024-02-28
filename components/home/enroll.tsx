@@ -19,7 +19,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
       <SignInModal />
       <div className="text-center">
         <button
-          className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
+          className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-green-700 active:bg-green-700 transition-colors duration-500"
           onClick={() => setShowSignInModal(true)}
         >
           {t('Sign Up - Sign In')}
@@ -32,7 +32,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
     <div className="relative text-left max-w-xl">
         <div className="text-center">
           <a
-            className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
+            className="mt-4 inline-block w-full bg-gray-500 py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-green-700 active:bg-green-700 transition-colors duration-500"
             href={"/episodes"}
             rel="noreferrer"
           >
@@ -41,7 +41,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
         </div>
         <div className="text-center">
           <a
-            className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
+            className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-yellow-600 active:bg-yellow-600 transition-colors duration-500"
             href={"https://enroll.soliditynirvana.com/b/7sI8zr5mCdDH5GMbIM?prefilled_email=" + email}
             rel="noreferrer"
             target="_blank"
@@ -56,7 +56,7 @@ export default function Enroll({ session, membership }: { session: Session | nul
     <div className="relative text-left max-w-xl">
         <div className="text-center">
           <a
-            className="mt-4 inline-block w-full bg-black py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-orange-500 active:bg-orange-500 transition-colors duration-500"
+            className="mt-4 inline-block w-full bg-gray-500 py-4 text-sm font-bold uppercase tracking-widest text-white hover:bg-green-700 active:bg-green-700 transition-colors duration-500"
             href={"/episodes"}
             rel="noreferrer"
           >

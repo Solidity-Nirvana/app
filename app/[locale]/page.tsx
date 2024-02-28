@@ -78,22 +78,7 @@ export default async function Home() {
   const member = await fetchData();
   const session = await getServerSession(authOptions);
 
-  const features = [
-    {
-      title: t('Early Access'),
-      description: t('$200 -> $50'),
-      demo: (
-        <div className="flex items-center justify-center space-x-20">
-            <Image
-              style={{ borderRadius: '50%', overflow: 'hidden' }}
-              src="/pose2.png"
-              alt="From Within"
-              width="200"
-              height="200"
-            ></Image>
-        </div>
-      ),
-    },
+  const features_a = [
     {
       title: t('21+ Episodes'),
       description: t('We will guide'),
@@ -124,6 +109,24 @@ export default async function Home() {
         </div>
       ),
     },
+    {
+      title: t('Early Access'),
+      description: t('$200 -> $50'),
+      demo: (
+        <div className="flex items-center justify-center space-x-20">
+            <Image
+              style={{ borderRadius: '50%', overflow: 'hidden' }}
+              src="/pose2.png"
+              alt="From Within"
+              width="200"
+              height="200"
+            ></Image>
+        </div>
+      ),
+    }
+  ];
+
+  const features_b = [
     {
       title: t('10+ Languages'),
       description: t('Multi-language'),
@@ -200,19 +203,6 @@ export default async function Home() {
         >
           <Balancer>{t('Solidity Nirvana')}</Balancer>
         </h1>
-        <h3
-          className="animate-fade-up bg-gradient-to-br from-green-800 uppercase to-black bg-clip-text text-center py-2 md:py-0 font-display text-xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-2xl md:leading-[4rem]"
-          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-        >
-          <Balancer>{t('Ultimate')}</Balancer>
-        </h3>
-
-
-        <div>
-          <NextIntlClientProvider messages={messages}>
-            <Enroll session={session} membership={member.membership} />
-          </NextIntlClientProvider>
-        </div>
 
 
         <div
@@ -255,6 +245,21 @@ export default async function Home() {
             </p>
           </a>
         </div>
+
+              <br />
+
+        <div>
+          <NextIntlClientProvider messages={messages}>
+            <Enroll session={session} membership={member.membership} />
+          </NextIntlClientProvider>
+        </div>
+        {/* <h3
+          className="animate-fade-up bg-gradient-to-br from-green-800 uppercase to-black bg-clip-text text-center py-2 md:py-0 font-display text-xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-2xl md:leading-[4rem]"
+          style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
+        >
+          <Balancer>{t('Ultimate')}</Balancer>
+        </h3> */}
+
         {/* <p
           className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 md:text-xl"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
@@ -276,8 +281,27 @@ export default async function Home() {
           </p>
         </a> */}
       </div>
+      <br />
+      <br />
+      
       <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 py-5 md:grid-cols-3 xl:px-0">
-        {features.map(({ title, description, demo }) => (
+        {features_a.map(({ title, description, demo }) => (
+          <Card
+            key={title}
+            title={title}
+            description={description}
+            demo={
+              title === "Beautiful, reusable components" ? (
+                <ComponentGrid />
+              ) : (
+                demo
+              )
+            }
+          />
+        ))}
+      </div>
+      <div className="my-10 grid w-full max-w-screen-xl animate-fade-up grid-cols-1 gap-5 px-5 py-5 md:grid-cols-2 xl:px-0">
+        {features_b.map(({ title, description, demo }) => (
           <Card
             key={title}
             title={title}
