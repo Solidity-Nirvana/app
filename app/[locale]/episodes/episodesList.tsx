@@ -71,6 +71,50 @@ export const introEpisodes = [
 
 export const easyEpisodes = [
     {
+        title: "Introduction [Mac & Linux]",
+        image: "/school2.png",
+        premium: false,
+        description: "Introduction episode for Mac/Linux users",
+        episodeVideo: "0_Mac_",
+        solutionsVideo: "Episoee_One_1440p.mp4",
+        episodeTimestamps: [
+            { description: 'Introduction', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'int Type', timestampString: '0:45', timestampNumber: 45 },
+            { description: 'uint Type', timestampString: '2:55',  timestampNumber: 175 },
+            { description: 'bool Type', timestampString: '3:55', timestampNumber: 235 },
+            { description: 'bytes Type', timestampString: '4:55', timestampNumber: 295 },
+        ],
+        solutionsTimestamp: [
+            { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+            { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+            { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+            { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+        ],
+    },
+    {
+        title: "Introduction [Windows]",
+        image: "/school.png",
+        premium: false,
+        description: "Introduction episode for Windows users",
+        episodeVideo: "0_Win_",
+        solutionsVideo: "Episoee_One_1440p.mp4",
+        episodeTimestamps: [
+            { description: 'Introduction', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'int Type', timestampString: '0:45', timestampNumber: 45 },
+            { description: 'uint Type', timestampString: '2:55',  timestampNumber: 175 },
+            { description: 'bool Type', timestampString: '3:55', timestampNumber: 235 },
+            { description: 'bytes Type', timestampString: '4:55', timestampNumber: 295 },
+        ],
+        solutionsTimestamp: [
+            { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+            { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+            { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+            { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+        ],
+    },
+    {
         title: "Contract",
         image: "/waterfall.png",
         premium: false,
@@ -138,5 +182,71 @@ export const easyEpisodes = [
             { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
             { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
         ],
-    }
+    },
+    {
+        title: "NatSpec",
+        image: "/knowledge.png",
+        premium: true,
+        description: "Enhanced comments for Solidity code",
+        episodeVideo: "4_",
+        solutionsVideo: "Episoee_One_1440p.mp4",
+        episodeTimestamps: [
+            { description: 'Agenda', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'Default Constructor', timestampString: '1:02', timestampNumber: 60 * 1 + 2 },
+            { description: 'State Variable Assignment', timestampString: '2:40',  timestampNumber: 60 * 2 + 40 },
+            { description: 'Message Sender (msg.sender)', timestampString: '5:58', timestampNumber: 60 * 5 + 58 },
+            { description: 'Order of Operations', timestampString: '9:03', timestampNumber: 60 * 9 + 3 }
+        ],
+        solutionsTimestamp: [
+            { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+            { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+            { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+            { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+            { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+        ],
+    },
+    // {
+    //     title: "View Functions",
+    //     image: "/pose3.png",
+    //     premium: true,
+    //     description: "View functions in Solidity, reading values from smart contracts",
+    //     episodeVideo: "5_",
+    //     solutionsVideo: "Episoee_One_1440p.mp4",
+    //     episodeTimestamps: [
+    //         { description: 'Agenda', timestampString: '0:15', timestampNumber: 15 },
+    //         { description: 'Default Constructor', timestampString: '1:02', timestampNumber: 60 * 1 + 2 },
+    //         { description: 'State Variable Assignment', timestampString: '2:40',  timestampNumber: 60 * 2 + 40 },
+    //         { description: 'Message Sender (msg.sender)', timestampString: '5:58', timestampNumber: 60 * 5 + 58 },
+    //         { description: 'Order of Operations', timestampString: '9:03', timestampNumber: 60 * 9 + 3 }
+    //     ],
+    //     solutionsTimestamp: [
+    //         { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+    //         { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+    //         { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+    //         { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+    //         { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+    //     ],
+    // },
+    // {
+    //     title: "Functions",
+    //     image: "/pose2u.png",
+    //     premium: true,
+    //     description: "Functions which change state, update variables and deploy contracts",
+    //     episodeVideo: "6_",
+    //     solutionsVideo: "Episoee_One_1440p.mp4",
+    //     episodeTimestamps: [
+    //         { description: 'Agenda', timestampString: '0:15', timestampNumber: 15 },
+    //         { description: 'Default Constructor', timestampString: '1:02', timestampNumber: 60 * 1 + 2 },
+    //         { description: 'State Variable Assignment', timestampString: '2:40',  timestampNumber: 60 * 2 + 40 },
+    //         { description: 'Message Sender (msg.sender)', timestampString: '5:58', timestampNumber: 60 * 5 + 58 },
+    //         { description: 'Order of Operations', timestampString: '9:03', timestampNumber: 60 * 9 + 3 }
+    //     ],
+    //     solutionsTimestamp: [
+    //         { description: 'Puzzle A', timestampString: '0:15', timestampNumber: 15 },
+    //         { description: 'Puzzle B', timestampString: '0:45', timestampNumber: 45 },
+    //         { description: 'Puzzle C', timestampString: '2:55',  timestampNumber: 175 },
+    //         { description: 'Puzzle D', timestampString: '3:55', timestampNumber: 235 },
+    //         { description: 'Puzzle E', timestampString: '4:55', timestampNumber: 295 },
+    //     ],
+    // }
 ];

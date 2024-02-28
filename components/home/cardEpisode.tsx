@@ -45,7 +45,8 @@ export default function CardEpisode({
       <div className="mx-auto max-w-md text-center pb-2">
         <h2 className="bg-gradient-to-br from-black to-zinc-400 bg-clip-text font-display text-xl font-bold text-transparent md:text-xl md:font-normal">
           <Balancer>
-            #{String(episodeNumber)} - {difficulty} {premium ? '| ' + premiumText : '| ' + freeText}
+            #{String(episodeNumber)} - {difficulty} 
+            {/* {premium ? '| ' + premiumText : '| ' + freeText} */}
           </Balancer>
         </h2>
       </div>
