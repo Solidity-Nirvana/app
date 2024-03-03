@@ -208,26 +208,26 @@ export default function Episodes({
               
               <h2 className="bg-gradient-to-br from-black to-grey-800 bg-clip-text font-display text-xl font-bold text-transparent md:text-1xl md:font-normal">
                 <Balancer>
-                {mode} {t('Agenda')}
+                <i>{mode}</i> | {t('Agenda')}
                 </Balancer>
               </h2>
               {
                 mode === t('Episode') && timestampsEpisode.map(({ description, timestampString, timestampNumber }, index) => (
                   <span key={index}>
                     <button
-                      className="group relative inline-block my-2 text-sm font-medium text-green-700 focus:outline-none focus:ring active:text-indigo-500"
+                      className="group relative inline-block my-2 text-sm font-medium text-yellow-700 focus:outline-none focus:ring active:text-indigo-500"
                       onClick={() => handleSeekTo(timestampNumber)}
                     >
                       <span
-                        className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-green-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+                        className="absolute inset-0 translate-x-0.5 translate-y-0.5 bg-yellow-600 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
                       ></span>
                       <span className="relative block border border-current bg-white text-md p-4 px-4 py-3">
-                        #<b>{index}</b>
-                        <br />
                         <i>{timestampString}</i>
+                        <br />
+                        {description}
                       </span>
                     </button>
-                    {index + 1 !== timestampsEpisode.length && ' ~ ~ ~ '}
+                    {/* {index + 1 !== timestampsEpisode.length && ' ~ ~ ~ '} */}
                   </span>
                 ))
               }
